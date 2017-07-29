@@ -13,5 +13,5 @@
 9. - [0727](./README/0727.md) Bootstrap 정리
    - [0727_1](./README/BootstrapGrid/BootstrapGrid.html) 부트스트랩 반응형 웹페이지
    - [0727_2](./README/BootstrapGrid/Gridbasic.html) 12 Divided Column 웹페이지
-   - [0727_3](./README/BootstrapGrid/BootstrapUse.html) 부트스트랩을 이용한 모바일 반응형 웹페이지(오류해결중)
-   
+   - [0727_3](./README/BootstrapGrid/BootstrapUse.html) 부트스트랩을 이용한 모바일 반응형 웹페이지
+10. [0728](./README/0728.md) Javascript 정리

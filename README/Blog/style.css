@@ -1,0 +1,234 @@
+/* CSS 중복 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration-line: none;
+}
+/* a태그 기본 색 지정 */
+a {
+  color: #aaa;
+}
+/* clear both class */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 전체 묶음*/
+.wrap {
+  padding: 0% 15%;
+}
+/* header */
+.header {
+  display: block;
+  height: 50px
+}
+/* header 왼쪽 */
+.headlf {
+  float: left;
+}
+/* header 왼쪽 회사 로고*/
+.logo {
+  display: inline-block;
+}
+/* header home 네비게이션 */
+.homenav {
+  display: inline-block;
+  line-height: 40px;
+}
+/* 리스트 수평배열 */
+.homenav > li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+/* header 오른쪽 */
+.login {
+  display: inline-block;
+  float: right;
+}
+/* 리스트 수평배열 */
+.login > li {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+/* 퍼스트차일드 라스트차일드 적용함. */
+.login li:first-child a{
+  color: #000;
+}
+.login li:last-child a{
+  color: #03a67b;
+}
+/* 바디 시작 */
+/* 첫번째 바디 왼쪽 */
+.bodyOne {
+  position: relative; /* 첫번째 바디 왼쪽 글 가운데 이동을 위해 포지션 앱솔루트를 실행해야 하므로 부모에 포지션 릴레이티브를 작성함 */
+  top: 30px;
+  margin-bottom: 100px;
+}
+/* 블록을 반으로 나눔 */
+.bodyLeft {
+  position: absolute; /* 가운데 정렬을 위해 포지션 앱솔루트 작성 */
+  top: 200px;
+  left: 0;
+  display: inline-block;
+  float: left;
+  width: 60%;
+}
+.bodyLeft h1 {
+  padding-bottom: 10px;
+}
+.bodyLeft p {
+  padding-bottom: 20px;
+}
+/* 인풋 묶음 */
+.mainSearch {
+  border: none;
+  font-size: 0;
+  /* 부모에 폰트사이즈를 0으로 수정하면 input 요소들이 떨어져 있는 것을 붙일 수 있다.*/
+}
+/* 인풋 텍스트 시작 */
+.inputTXT {
+  background: #f5f5f5;
+  padding: 15px 70px 15px 20px;
+  border-radius: 5px 0px 0px 5px; /* 인풋 모서리 둥글게  */
+}
+/* 인풋 버튼 시작 */
+.inputBTN {
+  background: #03a67b;
+  padding: 15px 60px;
+  border-radius: 0px 5px 5px 0px; /* 인풋 모서리 둥글게  */
+  letter-spacing: 5px; /* 버튼 글자 사이 띄우기 */
+  color: #fff;
+}
+/* 첫번째 바디 오른쪽 */
+.bodyOne .bodyRight {
+  position: position;
+  display: inline-block;
+  float: right;
+  right: 0;
+  width: 40%;
+}
+/* 오른쪽으로 구분한 블록의 오른쪽에 붙임 */
+.bodyOne .bodyRight img{
+  float: right;
+}
+/* 첫번째 바디 종료 */
+
+/* 두번째 바디 시작 */
+.bodyTwo {
+  text-align: center;
+}
+/* 두번째 바디 윗부분을 중앙정렬함 */
+.bodyTwo .bodyTop p {
+  width: 82%;
+  display: inline-block;
+  /* 중앙 정렬을 위해 인라인 블록으로 설정 */
+  margin-bottom: 50px
+}
+/* 밑 부분과 간격 조절 */
+.bodyMid {
+  margin-bottom: 100px;
+}
+.bodyMid h3 {
+ letter-spacing: 5px; /* 버튼 글자 사이 띄우기 */ 
+ margin: 10px
+}
+.bodyMid p {
+  margin: 0 10px;
+}
+.bodyMid .midLeft {
+  float: left;
+  width: 33.33%
+}
+.bodyMid .midMid {
+  float: left;
+  width: 33.33%
+}
+.bodyMid .midRight {
+  float: left;
+  width: 33.33%
+}
+/* 밑 부분과 간격 조절 */
+.bodyBtm {
+  margin-bottom: 100px;
+}
+/* 두번째 바디 종료 */
+
+/* 세번째 바디 시작 */
+.bodyThree {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.bodyThree p {
+  display: inline-block;
+  width: 70%;
+  margin-bottom: 50px;
+}
+/* 세번째바디 버튼 시작 */
+/* 패딩 적용 오류 해결 방법! 버튼에 패딩이 적용되지 않는 현상이 있었는데 보더 또는 배경을 지정해주니 패딩이 적용되었다. */
+.twoBtn .leftBtn {
+  padding: 25px 70px;
+  letter-spacing: 5px; /* 버튼 글자 사이 띄우기 */
+  border: 1px solid #03a67b;
+  background: #03a67b;
+  border-radius: 5px;
+}
+.twoBtn .rightBtn {
+  padding: 25px 70px;
+  letter-spacing: 5px; /* 버튼 글자 사이 띄우기 */
+  border: 1px solid #03a67b;
+  background: white;
+  border-radius: 5px;
+}
+/* 네번째 바디 시작 */
+.bodyFour {
+  text-align: center;
+}
+.bodyFour .bodyTop p {
+  width: 82%;
+  display: inline-block;
+  /* 중앙 정렬을 위해 인라인 블록으로 설정 */
+  margin-bottom: 50px
+}
+.pro {
+  padding-bottom: 10px;
+}
+/* footer 시작 */
+.footer {
+  text-align: center;
+  position: relative;
+}
+/* 오른쪽에 로고 고정 */
+.leftFt {
+  position: absolute;
+  display: inline-block;
+  bottom: 10px;
+  left: 10px;
+}
+/* 리스트 간격 조절 및 가운데 정렬  */
+.midFt {
+  text-align: center;
+  display: inline-block;
+  bottom: 10px;
+  left: 100px;
+}
+/* 오류 해결 방법! 부모에 인라인블록을 지정 안해주면 자식도 인라인블록으로 지정이 안된다. */
+.midFt > li {
+  display: inline-block;
+  padding: 0 10px;
+}
+/* 오른쪽부터 아이콘을 정렬 */
+.rightFt {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(50%)
+}
+/* 이미지 사이 간격 조절 */
+.rightFt form img {
+  margin: 3px;
+}

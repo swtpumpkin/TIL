@@ -1,0 +1,176 @@
+<!DOCTYPE httml>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  /* CSS초기화 */
+  * {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration-line: none;
+    list-style: none;
+  }
+  /* clearBoth */
+  .clearfix :after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .wrap {
+    position: relative;
+    margin-top: 60px;
+    bottom: 0;
+    top: 0;
+  }
+  /* 헤더 시작 */
+  .header {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background: wheat;
+    top: 0;
+  }
+  .nav > li {
+    display: inline-block;
+    margin: 0px 20px;
+  }
+  .logo {
+    display: inline-block;
+    height: 36px;
+    margin: 12px 0 12px 20px;
+  }
+  .nav {
+    float: right;
+    line-height: 60px;
+  }
+  .nav a{
+    color: #8a8c8f;
+  }
+  /* 마우스 오버 시 색 검정색 변환 */
+  .nav a:hover{
+    color: #000;
+  }
+  /* 헤더 종료 */
+  /* 어사이드 시작 */
+  .mid {
+    margin-top: 60px;
+  }
+  .aside {
+    position: fixed;
+    width: 200px;
+    background: #434343;
+    bottom: 0;
+    top: 0;
+    margin-top: 60px;
+    color: #fff;
+  }
+  .aside > h1 {
+    padding: 20px;
+  }
+  .aside ul{
+    padding: 0;
+  }
+  .aside ul li {
+    padding: 10px 40px 10px 20px;
+  }
+  .aside ul li:hover {
+    background: #4CAF50;
+  }
+  .aside a {
+    color: #fff;
+  }
+  /* 어사이드 종료 */
+  /* 본문 시작 */
+  .section{
+    background: #f0f3f4;
+    float: right;
+    margin-left: 200px;
+    margin-bottom: 60px
+  }
+  .pg{
+    margin: 10px;
+    padding: 25px;  
+    background: white;
+  }
+  /* 본문 종료 */
+  /* footer 시작 */
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 0 0 10px;
+    line-height: 60px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #dee5e7;
+  }
+  /* footer 종료 */
+</style>
+</head>
+<body>
+  <div class="wrap clearfix">
+    <!-- 헤더 시작 -->
+    <div class="header clearfix">
+      <img class="logo" src="http://poiemaweb.com/img/logo.png">
+      <ul class="nav">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#About">About</a></li>
+      </ul>
+    </div>
+    <!-- 헤더 끝 -->
+    <!-- 본문 시작 -->
+    <div class="mid clearfix">
+      <!-- 어사이드 시작 -->
+      <div class="aside">
+        <h1>Aside</h1>
+        <ul>
+          <li><a href="#" class="as active">London</a></li>
+          <li><a href="#" class="as">Paris</a></li>
+          <li><a href="#" class="as">Tokyo</a></li>
+          <li><a href="#" class="as">Newyork</a></li>
+        </ul>
+      </div>
+      <!-- 어사이드 끝 -->
+      <div class="section">
+        <div class="pg london">
+          <h1>London</h1>
+          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia,its history going back to its founding by the Romans, who named it Londinium.</p>
+          <p>London, also referred to as Greater London, is one of 9 regions of England and the top-level subdivision covering most of the city's metropolis. The small ancient City of London at its core once comprised the whole settlement, but as its urban area grew, the Corporation of London resisted attempts to amalgamate the city with its suburbs, causing "London" to be defined in a number ways for different purposes.</p>
+        </div>
+        <div class="pg paris">
+          <h1>Paris</h1>
+          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia,its history going back to its founding by the Romans, who named it Londinium.</p>
+          <p>London, also referred to as Greater London, is one of 9 regions of England and the top-level subdivision covering most of the city's metropolis. The small ancient City of London at its core once comprised the whole settlement, but as its urban area grew, the Corporation of London resisted attempts to amalgamate the city with its suburbs, causing "London" to be defined in a number ways for different purposes.</p>
+        </div>
+        <div class="pg tokyo">
+          <h1>Tokyo</h1>
+          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia,its history going back to its founding by the Romans, who named it Londinium.</p>
+          <p>London, also referred to as Greater London, is one of 9 regions of England and the top-level subdivision covering most of the city's metropolis. The small ancient City of London at its core once comprised the whole settlement, but as its urban area grew, the Corporation of London resisted attempts to amalgamate the city with its suburbs, causing "London" to be defined in a number ways for different purposes.</p>
+        </div>
+        <div class="pg newyork">
+          <h1>Newyork</h1>
+          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia,its history going back to its founding by the Romans, who named it Londinium.</p>
+          <p>London, also referred to as Greater London, is one of 9 regions of England and the top-level subdivision covering most of the city's metropolis. The small ancient City of London at its core once comprised the whole settlement, but as its urban area grew, the Corporation of London resisted attempts to amalgamate the city with its suburbs, causing "London" to be defined in a number ways for different purposes.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 본문 끝 -->
+    <!-- footer 시작 -->
+    <div class="footer">
+        <p>© Copyright 2017 Jeongwon</p>        
+    </div>
+    <!-- footer 끝 -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- 오류 해결! 타입 선언을 잘 못 해주면 먹히지 않는다. -->
+  <link rel="stylesheet" type="text/css" href="./dist/css/bootstrap.css">
+  <style>
+    /* Start of Resets */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none;      
+    }
+    body {
+      line-height: 1.42857143;
+      font-size: 14px;
+      color: #333;
+      background: gray;
+    }
+    /* End of Resets */
+    /* Fixed Width Container */
+    .container {
+      width: 900px;
+    }
+    /* Full Width Container */
+    .container-fluid {
+    }
+    .container , .container-fluid {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .row {
+      background: gray;
+    }
+    /* column 공통 항목 묶음 */
+    [class|="col"] {
+      min-height: 1px;
+      border: 1px solid silver;
+      text-align: center;
+      background: gray;
+      color: #fff;
+      line-height: 50px;
+    }
+    /* 가장 작은 사이즈는 float left 정렬 함. */
+    .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    }
+    /* 가장 작은 사이즈 이외의 사이즈는 position relative 정렬 함. */
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- navigarion 전체폭 할당 -->
+    <div class="row">
+     <div class="col-xs-12 col-md-12 col-lg-12">navigarion</div>
+    </div>
+    <!-- 왼쪽 폭 반응형 할당 -->
+    <div class="row">
+      <div class="col-xs-12 col-md-2 col-lg-2">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <!-- 중간 폭 반응형 할당 -->
+      <div class="col-xs-12 col-md-8 col-lg-8">
+        <h2>Main Section</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dicta, sint repellendus, eos nam aperiam dolorum neque sunt, ipsa fuga dolorem quos incidunt consectetur omnis enim ratione ad eum laudantium.</p>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptate maxime iste doloremque dolores officia eveniet error recusandae rem nobis enim alias nam vero asperiores, quia dolorum. Molestias, consectetur, vel!</p>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptate maxime iste doloremque dolores officia eveniet error recusandae rem nobis enim alias nam vero asperiores, quia dolorum. Molestias, consectetur, vel!</p>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptate maxime iste doloremque dolores officia eveniet error recusandae rem nobis enim alias nam vero asperiores, quia dolorum. Molestias, consectetur, vel!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium iure maxime soluta pariatur consectetur perspiciatis officiis quibusdam est. Necessitatibus reiciendis cum minima hic, quas est et minus inventore, voluptates mollitia.</p>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium iure maxime soluta pariatur consectetur perspiciatis officiis quibusdam est. Necessitatibus reiciendis cum minima hic, quas est et minus inventore, voluptates mollitia.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, debitis! Quaerat iusto libero enim eligendi reiciendis officiis numquam veniam, quo nemo aperiam, excepturi nostrum ducimus amet, minima magnam debitis nobis.</p>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, debitis! Quaerat iusto libero enim eligendi reiciendis officiis numquam veniam, quo nemo aperiam, excepturi nostrum ducimus amet, minima magnam debitis nobis.</p>
+          </div>
+        </div>
+      </div>
+      <!-- 오른쪽 폭 반응형 할당. -->
+      <div class="col-xs-12 col-md-2 col-lg-2">
+        <ul>
+          <li>Comment</li>
+          <li>News</li>
+        </ul> 
+      </div>
+    </div>
+    <!-- footer 폭 전체 폭 할당 -->
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-lg-12">
+        footer
+      </div>
+    </div>
+  </div>
+</body>
+</html>

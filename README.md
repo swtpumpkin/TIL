@@ -18,3 +18,5 @@
 11. [0731](./README/0731.md) Javascript 정리
 12. [0801](./README/0801.md) Javascript 정리
 13. [0803](./README/0803.md) Javascript 정리
+14. [0807](./README/0807.md) Javascript/Sass 정리
+15. [0808](./README/0808.md) Javascript 정리

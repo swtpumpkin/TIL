@@ -31,3 +31,4 @@
 24. [0905](./README/0905.md) Node.js 정리
 25. [0906](./README/0906.md) Node.js 정리
 26. [0911](./README/0911.md) My SQL 정리
+27. [0912](./README/0912.md) My SQL 정리
